@@ -389,6 +389,471 @@ const siteData = {
                      <div class="key-point"><strong>Cevapladığı Soru:</strong> Sistemin <strong>KURALLARI</strong> nelerdir? <br><strong>Cevap:</strong> Haklar, yükümlülükler, sigorta kolları.</div>
                 </div>
             </div>`,
+        'tarihsel-gelisim': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">Türk Sosyal Güvenlik Sisteminin Tarihsel Gelişimi</h1>
+            <p class="text-lg text-slate-600 mb-8">2006 reformu öncesinde Türkiye'deki sosyal güvenlik sistemi dağınık bir yapıya sahipti ve farklı çalışan gruplarına hizmet veren bağımsız kurumlardan oluşuyordu.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📜 Reform Öncesi Dağınık Yapı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <p class="mb-4">2006 yılındaki büyük sosyal güvenlik reformu öncesinde, Türkiye'deki sistem farklı çalışan gruplarına hizmet veren, birbirinden bağımsız ve farklı mevzuatlara tabi kurumlardan oluşuyordu.</p>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-red-700 mb-2">⚠️ Dağınık Yapının Sorunları</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• Her kurumun farklı kanunu, finansmanı ve hakları</li>
+                                <li>• Emeklilik yaşı, prim gün sayısı farklılıkları</li>
+                                <li>• Norm ve standart birliğinin olmaması</li>
+                                <li>• Aktüeryal dengelerin bozulması</li>
+                                <li>• Sistemde karmaşıklık ve eşitsizlikler</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Kritik Nokta:</strong> Bu dağınık yapı, reformun en temel gerekçelerinden biri olmuştur. Farklı çalışan grupları arasında eşitsizlikler ve kurumların mali dengelerinin bozulması reform ihtiyacını doğurmuştur.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏛️ Tarihsel Milat Kanunları</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-bold text-blue-600 mb-2">📅 1936 - 3008 Sayılı İş Kanunu</h4>
+                                <p class="text-sm mb-2">Türkiye'de sosyal sigortacılığın temellerini atan kanun</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Yaşlılık, malullük, ölüm sigorta kollarını ilk kez düzenledi</li>
+                                    <li>• Modern sosyal güvenlik sisteminin başlangıcı</li>
+                                    <li>• İşçiler için temel koruma sağladı</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-bold text-green-600 mb-2">📅 1950 - 5434 Sayılı Emekli Sandığı Kurumu</h4>
+                                <p class="text-sm mb-2">Devlet memurları ve kamu görevlilerini kapsayan sistem</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kendi kanunu ve finansman yapısına sahipti</li>
+                                    <li>• Memurlar için özel emeklilik sistemi</li>
+                                    <li>• Daha avantajlı şartlar sağlıyordu</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-purple-500 pl-4">
+                                <h4 class="font-bold text-purple-600 mb-2">📅 1971 - 1479 Sayılı Bağ-Kur</h4>
+                                <p class="text-sm mb-2">Bağımsız çalışanları sosyal güvenceye kavuşturdu</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Esnaf, sanatkâr ve serbest meslek mensupları</li>
+                                    <li>• Kendi adına ve hesabına çalışanlar</li>
+                                    <li>• Şirket ortakları dahil edildi</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-amber-500 pl-4">
+                                <h4 class="font-bold text-amber-600 mb-2">📅 1983 - 2925 ve 2926 Sayılı Kanunlar</h4>
+                                <p class="text-sm mb-2">Tarım sektörü için özel düzenlemeler</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Tarım SSK: Tarım işçileri için</li>
+                                    <li>• Tarım Bağ-Kur: Çiftçiler için</li>
+                                    <li>• Daha dar kapsamlı sigorta kolları</li>
+                                    <li>• Sektörel özellikler dikkate alındı</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>⚖️ Eski Sistemin Kurumsal Yapısı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-700 mb-2">SSK (Sosyal Sigortalar Kurumu)</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İşçileri kapsıyordu</li>
+                                    <li>• En geniş sigortalı kitlesi</li>
+                                    <li>• Sanayi ve hizmet sektörü</li>
+                                    <li>• Tam kapsam sigorta kolları</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">Bağ-Kur</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Esnaf ve sanatkârlar</li>
+                                    <li>• Serbest meslek mensupları</li>
+                                    <li>• Şirket ortakları</li>
+                                    <li>• Sınırlı sigorta kapsamı</li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-purple-700 mb-2">Emekli Sandığı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Devlet memurları</li>
+                                    <li>• Kamu görevlileri</li>
+                                    <li>• En avantajlı sistem</li>
+                                    <li>• Erken emeklilik imkanı</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>📊 Sınav Notu:</strong> Reform öncesi sistemin en belirgin özelliği, farklı çalışan grupları arasında norm ve standart birliğinin olmamasıydı. Bu durum sosyal adaletsizliklere ve mali dengesizliklere yol açtı.</div>
+                    </div>
+                </div>
+            </div>`,
+        'sosyal-guvenlik-reformu': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">2006-2008 Sosyal Güvenlik Reformu</h1>
+            <p class="text-lg text-slate-600 mb-8">Türkiye'nin sosyal güvenlik tarihindeki en kapsamlı dönüşüm olan reform, dağınık yapıyı birleştirerek modern ve sürdürülebilir bir sistem oluşturmuştur.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Reformun Temel Amaçları</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-700 mb-3">🏢 Kurumsal Bütünleşme (Tek Çatı)</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• SSK, Bağ-Kur, Emekli Sandığı birleştirildi</li>
+                                    <li>• Sosyal Güvenlik Kurumu (SGK) kuruldu</li>
+                                    <li>• Dağınık yapı ortadan kaldırıldı</li>
+                                    <li>• Tek bir kurumsal kimlik oluşturuldu</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">⚖️ Hukuki Bütünleşme (Norm Birliği)</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Tüm sigortalılar için eşit haklar</li>
+                                    <li>• Standart emeklilik koşulları</li>
+                                    <li>• Mevzuat tek kanunda toplandı</li>
+                                    <li>• Sosyal adalet sağlandı</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>Reformun Felsefesi:</strong> "Farklı çalışan grupları arasında eşitsizliği ortadan kaldırmak ve sürdürülebilir bir sosyal güvenlik sistemi kurmak."</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📜 Temel Kanunlar ve Tarihler</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-bold text-blue-600 mb-2">📅 2006 - Reform Başlangıcı</h4>
+                                <p class="text-sm mb-2">Sosyal güvenlik reformu kanunlarının çıkarılması</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Tasarıların hazırlanması</li>
+                                    <li>• Sosyal taraflarla görüşmeler</li>
+                                    <li>• Reform ihtiyacının belirlenmesi</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-bold text-green-600 mb-2">📅 1 Ekim 2008 - Tam Yürürlük</h4>
+                                <p class="text-sm mb-2">Reform kanunlarının tam olarak uygulanmaya başladığı tarih</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• SGK resmen faaliyete başladı</li>
+                                    <li>• 5502 ve 5510 sayılı kanunlar yürürlüğe girdi</li>
+                                    <li>• Eski kurumlar lağvedildi</li>
+                                    <li>• Yeni sistem tam olarak hayata geçti</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-amber-50 p-4 rounded-lg mt-4">
+                            <h5 class="font-bold text-amber-700 mb-2">🔥 Sınav İpucu</h5>
+                            <p class="text-sm"><strong>2006 = Başlangıç</strong>, <strong>1 Ekim 2008 = Tam Yürürlük</strong> tarihleri sınavların en sık sorulan konularındandır!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>⚖️ İki Temel Kanun: 5502 vs 5510</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-700 mb-3">🏢 5502 Sayılı SGK Kanunu</h4>
+                                <p class="text-sm mb-3 font-medium">"Kurum" - Kurumsal yapıyı düzenler</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• <strong>SGK'nın kurulması</strong></li>
+                                    <li>• <strong>Organları:</strong> Genel Kurul, Yönetim Kurulu</li>
+                                    <li>• <strong>Görevleri:</strong> Yönetim, denetim</li>
+                                    <li>• <strong>Yapısı:</strong> Teşkilat şeması</li>
+                                    <li>• <strong>Mali Yapı:</strong> Bütçe, harcama</li>
+                                </ul>
+                                <div class="mt-3 p-2 bg-blue-100 rounded text-xs">
+                                    <strong>Cevapladığı Soru:</strong> Sistemi <strong>KİM</strong> yönetecek?
+                                </div>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">📋 5510 Sayılı Sistem Kanunu</h4>
+                                <p class="text-sm mb-3 font-medium">"Sistem" - İçeriği ve kuralları düzenler</p>
+                                <ul class="text-sm space-y-1">
+                                    <li>• <strong>Sigortalılık:</strong> Kim sigortalı olur?</li>
+                                    <li>• <strong>Primler:</strong> Ne kadar ödenir?</li>
+                                    <li>• <strong>Haklar:</strong> Hangi yardımlar?</li>
+                                    <li>• <strong>Emeklilik:</strong> Nasıl şartlar?</li>
+                                    <li>• <strong>Sağlık:</strong> GSS kapsamı</li>
+                                </ul>
+                                <div class="mt-3 p-2 bg-green-100 rounded text-xs">
+                                    <strong>Cevapladığı Soru:</strong> Sistem <strong>NASIL</strong> çalışacak?
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>📊 Sınav Notu:</strong> 5502 Sayılı Kanun = Kurum (Kim?), 5510 Sayılı Kanun = Sistem (Ne, nasıl, ne zaman?). Bu ayrım sınavların temel konusudur!</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🔄 Reformun Sonuçları</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Olumlu Sonuçlar</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Sosyal adaletsizliklerin azalması</li>
+                                    <li>• Tek norm ve standart</li>
+                                    <li>• Mali sürdürülebilirlik</li>
+                                    <li>• İdari verimlilik artışı</li>
+                                    <li>• Koordinasyon problemlerinin çözümü</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-orange-700 mb-2">⚠️ Geçiş Zorlukları</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kazanılmış hakların korunması</li>
+                                    <li>• İdari adaptasyon süreci</li>
+                                    <li>• Personel entegrasyonu</li>
+                                    <li>• Sistem alışkanlıklarının değişmesi</li>
+                                    <li>• Mevzuat uyumlaştırması</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>Sonuç:</strong> Reform, Türkiye'nin sosyal güvenlik sistemini 21. yüzyılın gereklerine uygun hale getiren tarihsel bir dönüşüm olmuştur.</div>
+                    </div>
+                </div>
+            </div>`,
+        'sgk-yapisi': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">Sosyal Güvenlik Kurumu (SGK) Yapısı</h1>
+            <p class="text-lg text-slate-600 mb-8">SGK, kamu tüzel kişiliğine sahip, idari ve mali açıdan özerk, Çalışma ve Sosyal Güvenlik Bakanlığı'nın ilgili bir kuruluşudur.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏢 Hukuki Yapısı ve Özellikleri</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-700 mb-3">🏦 Kamu Tüzel Kişiliği</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Bağımsız hukuki kimliye sahip</li>
+                                    <li>• Kendi adına işlem yapabilir</li>
+                                    <li>• Mal varlığına sahiptir</li>
+                                    <li>• Dava açabilir ve açılabilir</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">🎯 İdari ve Mali Özerklik</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kendi bütçesini hazırlar</li>
+                                    <li>• Gelir-gider yönetimi yapar</li>
+                                    <li>• Personel işlemleri yürütür</li>
+                                    <li>• Yatırım kararları alır</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-yellow-700 mb-2">🔗 Bakanlıkla İlişki</h5>
+                            <p class="text-sm mb-2"><strong>"Bağlı" değil, "İlgili" kuruluş</strong></p>
+                            <ul class="text-sm space-y-1">
+                                <li>• Hiyerarşik bağ bulunmaz</li>
+                                <li>• Özerkliğini korur</li>
+                                <li>• Genel politika koordinasyonu vardır</li>
+                                <li>• Hesap verme sorumluluğu bulunur</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Kritik Ayrım:</strong> SGK'nın "bağlı" değil "ilgili" kuruluş olması, özerkliğini ve bağımsız karar alma yetisini gösterir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📅 Genel Kurul - Denetim ve Danışma Organı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kompozisyon ve Üyeler</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-red-50 p-3 rounded-lg">
+                                <h5 class="font-bold text-red-700 mb-2 text-sm">Hükümet Temsilcileri</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li>• Bakanlık temsilcileri</li>
+                                    <li>• Hazine temsilcisi</li>
+                                    <li>• Sayıştay temsilcisi</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-3 rounded-lg">
+                                <h5 class="font-bold text-blue-700 mb-2 text-sm">İşçi Temsilcileri</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li>• Konfederasyon temsilcileri</li>
+                                    <li>• Memur sendikası temsilcileri</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2 text-sm">İşveren Temsilcileri</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li>• İşveren konfederasyonu</li>
+                                    <li>• Esnaf odaları temsilcileri</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Görevleri</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>Yıllık Faaliyet Raporları:</strong> Kurumun performansını değerlendirir</li>
+                            <li><strong>Mali Durum İncelemesi:</strong> Gelir-gider dengesini analiz eder</li>
+                            <li><strong>Tavsiye Kararları:</strong> Kurumun gelişimi için öneriler sunar</li>
+                            <li><strong>Sosyal Diyalog:</strong> Sosyal taraflar arasında köprü kurma</li>
+                        </ul>
+                        
+                        <div class="key-point"><strong>İşlev:</strong> Genel Kurul, karar verici değil danışma organıdır. Sosyal tarafların sisteme katılımını sağlar.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏢 Yönetim Kurulu - En Üst Karar Organı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kompozisyon</h4>
+                        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>Başkan:</strong> SGK Başkanı (Yönetim Kurulu Başkanı)</li>
+                                <li>• <strong>Üyeler:</strong> Çeşitli bakan temsilcileri</li>
+                                <li>• <strong>Uzmanlar:</strong> Alanda deneyimli kişiler</li>
+                                <li>• <strong>Atama:</strong> Cumhurbaşkanı tarafından</li>
+                            </ul>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Temel Görevleri</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-700 mb-2">Stratejik Kararlar</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kurum politikalarını belirler</li>
+                                    <li>• Uzun vadeli planlar yapar</li>
+                                    <li>• Performans hedefleri koyar</li>
+                                    <li>• Risk yönetimi politikaları</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">Mali Kararlar</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Bütçeyi onaylar</li>
+                                    <li>• Taşınmaz alım-satımına karar verir</li>
+                                    <li>• Yatırım kararları alır</li>
+                                    <li>• Mali tablo ve raporları onaylar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Atama Yetkileri</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>SGK Başkanı:</strong> Yönetim Kurulu SGK Başkanını atar</li>
+                            <li><strong>Genel Müdürler:</strong> Üst düzey yöneticilerin atanması</li>
+                            <li><strong>Bölge Müdürleri:</strong> Taşra teşkilatı yöneticileri</li>
+                        </ul>
+                        
+                        <div class="key-point"><strong>Yetki Alanı:</strong> Yönetim Kurulu, SGK'nın en üst karar organıdır ve tüm stratejik konularda son sözü söyler.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>💼 Başkanlık Teşkilatı - İcra Organı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Hiyerarşik Yapı</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-red-500 pl-4">
+                                <h5 class="font-bold text-red-600 mb-2">👑 SGK Başkanı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• En üst düzey yürütün</li>
+                                    <li>• Yönetim Kurulu kararlarını uygular</li>
+                                    <li>• Kurumu temsil eder</li>
+                                    <li>• Genel koordinasyonu sağlar</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h5 class="font-bold text-blue-600 mb-2">🏢 Genel Müdürlükler (Merkez)</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Sigorta Primleri GM</li>
+                                    <li>• Sosyal Sigorta GM</li>
+                                    <li>• Sağlık Hizmetleri GM</li>
+                                    <li>• Strateji Geliştirme GM</li>
+                                    <li>• Teftiş Kurulu GM</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h5 class="font-bold text-green-600 mb-2">🌍 Taşra Teşkilatı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İl Müdürlükleri (81 ilde)</li>
+                                    <li>• İlçe Müdürlükleri</li>
+                                    <li>• Sosyal Güvenlik Merkezleri</li>
+                                    <li>• Hizmet İletim Noktaları</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>İşlev:</strong> Başkanlık Teşkilatı, Yönetim Kurulu'nun aldığı kararları hayata geçiren operasyonel birimlerdir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🩺 Sosyal Sigorta Yüksek Sağlık Kurulu</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kurul Yapısı ve Üyelik</h4>
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>Tıp Profesorleri:</strong> Çeşitli tıp dalından uzmanlar</li>
+                                <li>• <strong>SGK Temsilcileri:</strong> Kurumsal perspektif sağlayanlar</li>
+                                <li>• <strong>Bağımsız Üyeler:</strong> Objektif değerlendirme yapanlar</li>
+                                <li>• <strong>Uzmanlık Alanları:</strong> Ortopedi, nöroloji, psikiyatri vb.</li>
+                            </ul>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Temel Görevleri</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-700 mb-2">Maluliyet Tespiti</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Meslekte kazanma gücü kaybı oranı</li>
+                                    <li>• Çalışma kapasitesi değerlendirmesi</li>
+                                    <li>• Maluliyet derece tespiti</li>
+                                    <li>• Meslek hastalığı ilişkisi</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">İtiraz Değerlendirme</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Hekim rapor itirazları</li>
+                                    <li>• Maluliyet derece itirazları</li>
+                                    <li>• İş kazası ilişki itirazları</li>
+                                    <li>• Sağlık kurulu itirazları</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Karar Verme Süreci</h4>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>Bağımsız Değerlendirme:</strong> Objektif tıbbi kriterlere dayansın</li>
+                                <li>• <strong>Oybirliği veya Oyçokluğu:</strong> Kolektif karar alma</li>
+                                <li>• <strong>Dosya İncelemesi:</strong> Tüm tıbbi belgeler değerlendirilir</li>
+                                <li>• <strong>Kesin Karar:</strong> SGK'yı bağlayan nihai karar</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Kritik Özellik:</strong> Kurulun kararları SGK'yı bağlar ve son derece teknik konularda nihai yetkiye sahiptir.</div>
+                    </div>
+                </div>
+            </div>`,
         '4a-detay': `
             <h1 class="text-3xl font-bold text-teal-700 mb-6">4/a Sigortalılığı (İşçi) - Detaylı İnceleme</h1>
             <p class="text-lg text-slate-600 mb-8">Bir veya birden fazla işverene bağlı olarak hizmet akdi ile çalışanların sigortalılık ilişkisi ve prosedürleri.</p>
