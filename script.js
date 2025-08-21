@@ -388,6 +388,815 @@ const siteData = {
                     <p class="text-slate-600 mb-4 flex-grow">Bu kanun, sosyal güvenlik sisteminin <strong>içeriğini ve esaslarını</strong> düzenler. Kimlerin sigortalı sayılacağını, hangi primlerin ödeneceğini, hangi haklardan (emeklilik, sağlık vb.) yararlanılacağını belirler.</p>
                      <div class="key-point"><strong>Cevapladığı Soru:</strong> Sistemin <strong>KURALLARI</strong> nelerdir? <br><strong>Cevap:</strong> Haklar, yükümlülükler, sigorta kolları.</div>
                 </div>
+            </div>`,
+        '4a-detay': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">4/a Sigortalılığı (İşçi) - Detaylı İnceleme</h1>
+            <p class="text-lg text-slate-600 mb-8">Bir veya birden fazla işverene bağlı olarak hizmet akdi ile çalışanların sigortalılık ilişkisi ve prosedürleri.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📋 Sigortalılığın Başlangıcı ve Bildirilmesi</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Başlangıç Anı</h4>
+                        <p class="mb-4">Sigortalılık, işçinin <strong>fiilen çalışmaya başladığı tarih ve saatten</strong> itibaren başlar. İşverenin SGK'ya bildirim yapıp yapmaması bu durumu değiştirmez.</p>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Bildirim Yükümlülüğü</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>İşe Giriş Bildirgesi:</strong> İşçinin çalışmaya başlamasından en geç bir gün önce SGK'ya verilmelidir</li>
+                            <li><strong>SGK Web Servisi:</strong> e-Bordro sistemi üzerinden elektronik ortamda yapılır</li>
+                            <li><strong>Acil Durum Bildirgesi:</strong> İş kazası riskinin yüksek olduğu işlerde günlük bildirim zorunluluğu</li>
+                        </ul>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500 mb-4">
+                            <h5 class="font-bold text-red-700 mb-2">⚠️ Geç Bildirim Cezaları</h5>
+                            <ul class="list-disc list-inside text-sm text-red-600 space-y-1">
+                                <li>Süresi içinde bildirilmeyen her sigortalı için <strong>idari para cezası</strong></li>
+                                <li>2024 yılı için yaklaşık 500 TL/sigortalı (her yıl güncellenir)</li>
+                                <li>Kasten bildirilmeyenlere <strong>ağır idari para cezası</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Kritik Nokta:</strong> İşveren bildirimi yapmasa bile işçi o tarihten itibaren sigortalıdır ve tüm haklardan yararlanabilir. SGK denetiminde tespit edilirse geriye dönük primler tahsil edilir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🔄 Sigortalılığın Sona Ermesi</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Sona Erme Sebepleri</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>İşten Ayrılma:</strong> İşçinin kendi isteği veya işverenin feshi</li>
+                            <li><strong>Emeklilik:</strong> Yaşlılık aylığı bağlanması</li>
+                            <li><strong>Ölüm:</strong> Sigortalının vefatı</li>
+                            <li><strong>Statü Değişikliği:</strong> 4/b veya 4/c'ye geçiş</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">İşten Çıkış Bildirgesi</h4>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li><strong>Süre:</strong> İşten ayrılıştan itibaren 10 gün içinde</li>
+                                <li><strong>İçerik:</strong> Ayrılış tarihi, nedeni, kıdem tazminatı bilgileri</li>
+                                <li><strong>Özel Durumlar:</strong> İş kazası, ölüm gibi durumlarda acil bildirim</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Dikkat:</strong> İşçi çalışmayı bıraksa bile işveren bildirimi yapmazsa sigortalılık devam eder ve prim borcu birikir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Sigorta Kolları Kapsamı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Tam Kapsam (Bütün Sigorta Kolları)</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">🩹 Kısa Vadeli Sigorta Kolları</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İş Kazası</li>
+                                    <li>• Meslek Hastalığı</li>
+                                    <li>• Hastalık</li>
+                                    <li>• Analık (Doğum)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-purple-700 mb-2">⏳ Uzun Vadeli Sigorta Kolları</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Malullük</li>
+                                    <li>• Yaşlılık (Emeklilik)</li>
+                                    <li>• Ölüm</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-teal-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-teal-700 mb-2">🏥 Ek Sigortalar</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>Genel Sağlık Sigortası (GSS):</strong> Sağlık hizmetleri</li>
+                                <li>• <strong>İşsizlik Sigortası:</strong> İşsizlik maaşı ve aktif işgücü programları</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Tam Koruma:</strong> 4/a sigortalıları tüm sigorta kollarından yararlanır. Bu en kapsamlı sosyal güvenlik korumasıdır.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>⚖️ Hak ve Yükümlülükler</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">İşçinin Hakları</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Tüm sigorta kollarından yararlanma</li>
+                            <li>Sigortalılık sürelerinin emekliliğe sayılması</li>
+                            <li>İşsizlik maaşı alma (şartları sağlarsa)</li>
+                            <li>Sağlık hizmetlerinden yararlanma</li>
+                            <li>Bakmakla yükümlü olduğu kişileri sigortalı yapma</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">İşçinin Yükümlülükleri</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>İşçi payı primlerin maaşından kesilmesine razı olma</li>
+                            <li>Sigortalılıkla ilgili değişiklikleri işverene bildirme</li>
+                            <li>Sağlık hizmetlerini gereksiz yere kullanmama</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">İşverenin Yükümlülükleri</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Zamanında ve doğru bildirim yapma</li>
+                            <li>Hem işçi hem işveren payı primleri ödeme</li>
+                            <li>İş sağlığı ve güvenliği tedbirlerini alma</li>
+                            <li>Bordro ve belgelerini düzenli tutma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>`,
+        '4b-detay': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">4/b Sigortalılığı (Esnaf/Bağ-Kur) - Detaylı İnceleme</h1>
+            <p class="text-lg text-slate-600 mb-8">Kendi adına ve hesabına bağımsız çalışan esnaf, sanatkâr, şirket ortakları ve serbest meslek mensuplarının sigortalılık ilişkisi.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏪 Sigortalı Sayılanlar</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-700 mb-3">Esnaf ve Sanatkârlar</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Ticaret odası kayıtlı tacirler</li>
+                                    <li>• Esnaf ve sanatkârlar odası üyeleri</li>
+                                    <li>• Muhtarlık belgesine dayalı faaliyette bulunanlar</li>
+                                    <li>• Seyyar satıcılar (ruhsatlı)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">Şirket Ortakları</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kollektif şirket ortakları</li>
+                                    <li>• Komanditer şirket komandite ortakları</li>
+                                    <li>• Limited şirket ortakları (%10+ pay)</li>
+                                    <li>• Kooperatif ortakları (çalışanlar)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                            <h4 class="font-bold text-purple-700 mb-3">Serbest Meslek Mensupları</h4>
+                            <ul class="text-sm space-y-1 grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <li>• Avukatlar</li>
+                                <li>• Mühendisler</li>
+                                <li>• Mimar</li>
+                                <li>• Doktorlar</li>
+                                <li>• Muhasebeciler</li>
+                                <li>• Eczacılar</li>
+                                <li>• Diş hekimleri</li>
+                                <li>• Veteriner hekimler</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Temel Kriter:</strong> Kendi adına ve hesabına, bağımsız olarak faaliyet göstermek. Başkasına bağımlı çalışma durumunda 4/a kapsamına girer.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📝 Sigortalılığın Başlangıcı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Başlangıç Şartları</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>18 yaşını doldurmak</strong> (Erken evlilik halinde 16 yaş)</li>
+                            <li><strong>Fiilen faaliyete başlamak</strong></li>
+                            <li><strong>Ticari kayıt/ruhsat almak</strong> (faaliyet türüne göre)</li>
+                            <li><strong>Başka bir zorunlu sigortalılığının bulunmaması</strong></li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Bildirim Prosedürü</h4>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li><strong>Süre:</strong> Faaliyete başladığı tarihten itibaren 1 ay içinde</li>
+                                <li><strong>Yer:</strong> SGK il/ilçe müdürlükleri veya e-Devlet</li>
+                                <li><strong>Belgeler:</strong> Kimlik, ticari kayıt, adres belgesi</li>
+                                <li><strong>Prim Ödeme:</strong> Kayıt tarihinden itibaren başlar</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Önemli:</strong> Geç kayıt olma durumunda geriye dönük prim borcu doğmaz, ancak o süre emekliliğe sayılmaz.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Sigorta Kolları ve Kapsamı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kapsam Dahilindeki Sigorta Kolları</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Kapsamdakiler</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Malullük Sigortası</li>
+                                    <li>• Yaşlılık Sigortası</li>
+                                    <li>• Ölüm Sigortası</li>
+                                    <li>• Genel Sağlık Sigortası</li>
+                                    <li>• İş Kazası (şartlı)</li>
+                                    <li>• Meslek Hastalığı (şartlı)</li>
+                                    <li>• Analık (doğum) (şartlı)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-red-700 mb-2">❌ Kapsam Dışı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Hastalık Sigortası</li>
+                                    <li>• İşsizlik Sigortası</li>
+                                    <li>• Klasik rapor parası</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-orange-700 mb-2">⚠️ Şartlı Haklar</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>İş Kazası:</strong> Sadece işyerinde, iş nedeniyle</li>
+                                <li>• <strong>Meslek Hastalığı:</strong> Belirli mesleklere özgü</li>
+                                <li>• <strong>Analık:</strong> Doğum izni ve doğum yardımı</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Sınırlı Koruma:</strong> 4/b sigortalıları temel emeklilik ve sağlık hizmetlerinden yararlanır, ancak hastalık sigortası ve işsizlik güvencesi yoktur.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>💰 Prim Ödeme ve Mali Yükümlülükler</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Prim Matrahı Seçenekleri</h4>
+                        <div class="overflow-x-auto mb-4">
+                            <table class="w-full border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border">Matrah Türü</th>
+                                        <th class="p-3 font-semibold border">2024 Tutarı</th>
+                                        <th class="p-3 font-semibold border">Aylık Prim</th>
+                                        <th class="p-3 font-semibold border">Açıklama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Asgari</td>
+                                        <td class="p-3 border">26.005,50 TL</td>
+                                        <td class="p-3 border">~9.040 TL</td>
+                                        <td class="p-3 border text-sm">En düşük prim ödeme</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Orta</td>
+                                        <td class="p-3 border">39.008,25 TL</td>
+                                        <td class="p-3 border">~13.560 TL</td>
+                                        <td class="p-3 border text-sm">Standart tercih</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Üst</td>
+                                        <td class="p-3 border">65.013,75 TL</td>
+                                        <td class="p-3 border">~22.600 TL</td>
+                                        <td class="p-3 border text-sm">Yüksek emekli maaşı</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Ödeme Koşulları</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>Ödeme Tarihi:</strong> Her ayın sonuna kadar</li>
+                            <li><strong>Gecikme Zammı:</strong> Geciken her gün için %0,1 faiz</li>
+                            <li><strong>Borcun Yapılandırılması:</strong> Belirli dönemlerde af kanunları</li>
+                            <li><strong>İcra Takibi:</strong> 60 günden fazla gecikmelerde başlar</li>
+                        </ul>
+                        
+                        <div class="key-point"><strong>Matrah Seçimi:</strong> Yüksek matrah seçmek emekli maaşını artırır ancak aylık prim yükünü de artırır. Seçim bir kez yapılır, değiştirmek için özel şartlar gerekir.</div>
+                    </div>
+                </div>
+            </div>`,
+        '4c-detay': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">4/c Sigortalılığı (Memur) - Detaylı İnceleme</h1>
+            <p class="text-lg text-slate-600 mb-8">Kamu idarelerinde 657 sayılı Devlet Memurları Kanunu veya diğer personel kanunlarına tabi olarak çalışanların sigortalılık sistemi.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏛️ Sigortalı Sayılanlar</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-blue-700 mb-3">Devlet Memurları</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• 657 sayılı kanuna tabi memurlar</li>
+                                    <li>• Büyükelçiler, konsoloslar</li>
+                                    <li>• Milli Eğitim personeli</li>
+                                    <li>• Sağlık personeli (kamu)</li>
+                                    <li>• Adliye personeli</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">Özel Kanunlu Personel</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Akademik personel (2547 sayılı)</li>
+                                    <li>• Yargı mensupları (hakimler, savcılar)</li>
+                                    <li>• Güvenlik personeli (polis, asker)</li>
+                                    <li>• Belediyelerde 657'ye tabi olanlar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                            <h4 class="font-bold text-purple-700 mb-3">Sözleşmeli Personel</h4>
+                            <ul class="text-sm space-y-1">
+                                <li>• Kamu kurumlarında 657 sayılı kanuna tabi sözleşmeli personel</li>
+                                <li>• Geçici personel (belirli süreli)</li>
+                                <li>• İşçi statüsünde olmayanlar</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Ayırt Edici Özellik:</strong> Kamu gücü kullanma yetkisi olan veya kamu hizmeti ifa eden, 657 sayılı kanun kapsamındaki personeldir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📋 Sigortalılığın Başlangıcı ve İşlemleri</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Memuriyete Atama Süreci</h4>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <ol class="list-decimal list-inside text-sm space-y-1">
+                                <li><strong>KPSS Sınavı:</strong> Kamu personeli seçme sınavı</li>
+                                <li><strong>Başvuru ve Değerlendirme:</strong> Kuruma başvuru, belge kontrolü</li>
+                                <li><strong>Atama Kararı:</strong> Resmi atama emrinin çıkması</li>
+                                <li><strong>Göreve Başlama:</strong> Fiilen çalışmaya başlama</li>
+                                <li><strong>SGK Kaydı:</strong> Kurumun SGK'ya bildirim yapması</li>
+                            </ol>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Sigortalılığın Başlangıcı</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>Atama Tarihi:</strong> Resmi atama emrinde belirtilen tarih</li>
+                            <li><strong>Göreve Başlama:</strong> Fiilen çalışmaya başladığı tarih</li>
+                            <li><strong>Sicil İşlemleri:</strong> Personel sicil kayıtlarının tutulması</li>
+                            <li><strong>Bordro Kaydı:</strong> Maaş bordrolarına dahil edilme</li>
+                        </ul>
+                        
+                        <div class="key-point"><strong>Otomatik Kayıt:</strong> Memur olarak atananlar otomatik olarak 4/c kapsamına girer. Ayrı bir başvuru gerekmez.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Sigorta Kolları Kapsamı</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kapsam Dahilindeki Sigorta Kolları</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Tam Kapsam</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Malullük Sigortası</li>
+                                    <li>• Yaşlılık Sigortası</li>
+                                    <li>• Ölüm Sigortası</li>
+                                    <li>• Genel Sağlık Sigortası</li>
+                                </ul>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-yellow-700 mb-2">⚠️ Kısmi Kapsam</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İş Kazası (görev başında)</li>
+                                    <li>• Meslek Hastalığı (sınırlı)</li>
+                                    <li>• Analık (doğum izni)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-red-700 mb-2">❌ Kapsam Dışı</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• Hastalık Sigortası (rapor parası)</li>
+                                <li>• İşsizlik Sigortası</li>
+                                <li>• Genel iş kazası kapsamı</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Özel Durum:</strong> Memurlar hastalık raporu aldıklarında maaşları kesilmez, bu nedenle ayrı hastalık sigortasına ihtiyaç duymazlar.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>💰 Emeklilik Sistemi ve Özellikleri</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Emeklilik Koşulları (Genel)</h4>
+                        <div class="overflow-x-auto mb-4">
+                            <table class="w-full border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border">Emeklilik Türü</th>
+                                        <th class="p-3 font-semibold border">Yaş Şartı</th>
+                                        <th class="p-3 font-semibold border">Hizmet Süresi</th>
+                                        <th class="p-3 font-semibold border">Prim Gün Sayısı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Yaşlılık (Normal)</td>
+                                        <td class="p-3 border">65 yaş</td>
+                                        <td class="p-3 border">25 yıl</td>
+                                        <td class="p-3 border">9.000 gün</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Erken Emeklilik</td>
+                                        <td class="p-3 border">60 yaş</td>
+                                        <td class="p-3 border">30 yıl</td>
+                                        <td class="p-3 border">10.800 gün</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Kadın (Özel)</td>
+                                        <td class="p-3 border">58-60 yaş</td>
+                                        <td class="p-3 border">20-25 yıl</td>
+                                        <td class="p-3 border">Değişken</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Maaş Hesaplama Sistemi</h4>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li><strong>Emekli İkramiyesi:</strong> Son maaşın belli katları</li>
+                                <li><strong>Aylık Bağlama Oranı:</strong> Hizmet süresine göre %35-80 arası</li>
+                                <li><strong>Intibak İşlemleri:</strong> Maaş güncellemeleri</li>
+                                <li><strong>Derece Terfisi:</strong> Emeklilikte maaş artışı</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Avantaj:</strong> 4/c emekliliği genellikle diğer statülere göre daha erken yaşta ve daha yüksek maaşla emeklilik imkanı sağlar.</div>
+                    </div>
+                </div>
+            </div>`,
+        'istege-bagli-detay': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">İsteğe Bağlı Sigortalılık - Detaylı İnceleme</h1>
+            <p class="text-lg text-slate-600 mb-8">Zorunlu sigortalı olmayanların kendi isteğiyle SGK sistemine dahil olarak emeklilik ve sağlık haklarından yararlanabildiği sigortalılık türüdür.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Kimler Başvurabilir?</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Genel Şartlar</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>18 yaşını doldurmuş olmak</strong></li>
+                            <li><strong>Herhangi bir zorunlu sigortalılığının bulunmaması</strong></li>
+                            <li><strong>Türkiye'de ikamet etmek</strong></li>
+                            <li><strong>Daha önce en az 5 yıl prim ödemiş olmak</strong> (yeni başvurular için)</li>
+                        </ul>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-3">✅ Başvurabilenler</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İşsiz olanlar</li>
+                                    <li>• Ev hanımları</li>
+                                    <li>• Öğrenciler (18+ yaş)</li>
+                                    <li>• Emekli olanlar (ek güvence için)</li>
+                                    <li>• Yurtdışında yaşayanlar</li>
+                                    <li>• Serbest çalışanlar (4/b kapsamında olmayanlar)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-red-700 mb-3">❌ Başvuramayanlar</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• 4/a sigortalıları</li>
+                                    <li>• 4/b sigortalıları</li>
+                                    <li>• 4/c sigortalıları</li>
+                                    <li>• Hiç prim ödememiş olanlar</li>
+                                    <li>• 18 yaş altındakiler</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>Önemli:</strong> İsteğe bağlı sigortalılık, zorunlu sigortalılığın alternatifi değil, tamamlayıcısıdır. Öncelik her zaman zorunlu sigortalılıktadır.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>📝 Başvuru Süreci ve Koşulları</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Başvuru Prosedürü</h4>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <ol class="list-decimal list-inside text-sm space-y-1">
+                                <li><strong>Başvuru Dilekçesi:</strong> SGK il/ilçe müdürlüklerine</li>
+                                <li><strong>Belge Kontrolü:</strong> Kimlik, ikametgah, sigortalılık geçmişi</li>
+                                <li><strong>Prim Matrah Seçimi:</strong> Ödeyebileceği tutarı belirleme</li>
+                                <li><strong>Onay Süreci:</strong> SGK'nın değerlendirmesi</li>
+                                <li><strong>Prim Ödemeye Başlama:</strong> Onaydan sonra 30 gün içinde</li>
+                            </ol>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Gerekli Belgeler</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Kimlik fotokopisi</li>
+                            <li>İkametgah belgesi</li>
+                            <li>Sigortalılık belge çıktısı (e-Devlet'ten)</li>
+                            <li>Gelir beyanı (varsa)</li>
+                            <li>Yurtdışı ikamet belgesi (yurtdışında yaşayanlar için)</li>
+                        </ul>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-orange-700 mb-2">⚠️ Dikkat Edilecek Hususlar</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• İlk 3 aylık prim peşin ödenmelidir</li>
+                                <li>• Başvuru tarihinden itibaren geri sayım başlar</li>
+                                <li>• İptal durumunda 5 yıl bekleme süresi vardır</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Bekleme Süresi:</strong> İsteğe bağlı sigortalılıktan ayrıldıktan sonra 5 yıl boyunca yeniden başvuru yapılamaz.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎯 Kapsam ve Haklar</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Sağlanan Haklar</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Kapsam Dahilinde</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Malullük Sigortası</li>
+                                    <li>• Yaşlılık Sigortası (Emeklilik)</li>
+                                    <li>• Ölüm Sigortası</li>
+                                    <li>• Genel Sağlık Sigortası</li>
+                                    <li>• Hak sahiplerinin sağlık sigortası</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-red-700 mb-2">❌ Kapsam Dışı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İş Kazası Sigortası</li>
+                                    <li>• Meslek Hastalığı Sigortası</li>
+                                    <li>• Hastalık Sigortası (rapor parası)</li>
+                                    <li>• Analık Sigortası</li>
+                                    <li>• İşsizlik Sigortası</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Emeklilik Koşulları</h4>
+                        <div class="overflow-x-auto mb-4">
+                            <table class="w-full border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border">Cinsiyet</th>
+                                        <th class="p-3 font-semibold border">Yaş Şartı</th>
+                                        <th class="p-3 font-semibold border">Prim Gün Sayısı</th>
+                                        <th class="p-3 font-semibold border">Sigortalılık Süresi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Erkek</td>
+                                        <td class="p-3 border">65 yaş</td>
+                                        <td class="p-3 border">7.200 gün</td>
+                                        <td class="p-3 border">25 yıl</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border font-medium">Kadın</td>
+                                        <td class="p-3 border">65 yaş</td>
+                                        <td class="p-3 border">7.200 gün</td>
+                                        <td class="p-3 border">25 yıl</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="key-point"><strong>Sigortalılık Statüsü:</strong> İsteğe bağlı sigortalılar 4/b statüsünde sayılır ve emeklilik hesaplamalarında bu statü esas alınır.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>💰 Prim Ödeme Sistemi</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Prim Matrahı ve Ödeme</h4>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li><strong>Prim Oranı:</strong> %32 (20% emeklilik + 12% sağlık)</li>
+                                <li><strong>Minimum Matrah:</strong> Brüt asgari ücretin %35'i</li>
+                                <li><strong>Maksimum Matrah:</strong> Brüt asgari ücretin %100'ü</li>
+                                <li><strong>Ödeme Zamanı:</strong> Her ayın sonuna kadar</li>
+                            </ul>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">2024 Yılı Prim Tutarları</h4>
+                        <div class="overflow-x-auto mb-4">
+                            <table class="w-full border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border">Matrah Oranı</th>
+                                        <th class="p-3 font-semibold border">Matrah Tutarı</th>
+                                        <th class="p-3 font-semibold border">Aylık Prim</th>
+                                        <th class="p-3 font-semibold border">Emekli Maaşı Etkisi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 border">%35 (Minimum)</td>
+                                        <td class="p-3 border">9.102 TL</td>
+                                        <td class="p-3 border">2.913 TL</td>
+                                        <td class="p-3 border text-sm">Düşük maaş</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border">%50</td>
+                                        <td class="p-3 border">13.003 TL</td>
+                                        <td class="p-3 border">4.161 TL</td>
+                                        <td class="p-3 border text-sm">Orta maaş</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border">%100 (Maksimum)</td>
+                                        <td class="p-3 border">26.005 TL</td>
+                                        <td class="p-3 border">8.322 TL</td>
+                                        <td class="p-3 border text-sm">Yüksek maaş</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="key-point"><strong>Matrah Değişikliği:</strong> Yılda bir kez olmak üzere matrah oranı değiştirilebilir. Değişiklik bir sonraki yılın Ocak ayından geçerli olur.</div>
+                    </div>
+                </div>
+            </div>`,
+        'kismen-sigortali': `
+            <h1 class="text-3xl font-bold text-teal-700 mb-6">Kısmen (Bazı Sigorta Kolları Bakımından) Sigortalılar</h1>
+            <p class="text-lg text-slate-600 mb-8">Tüm sigorta kollarından değil, sadece belirli sigorta kollarından yararlanan veya özel düzenlemelere tabi olan sigortalı gruplarıdır.</p>
+            
+            <div class="space-y-6 accordion-container">
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🎓 Stajyer ve Öğrenci Sigortalıları</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Kapsama Dahil Olanlar</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-700 mb-2">Stajyerler</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İşyerinde mesleki eğitim görenler</li>
+                                    <li>• Çıraklık eğitimi alanlar</li>
+                                    <li>• Usta-çırak ilişkisi içindekiler</li>
+                                    <li>• Beceri eğitimi alanlar</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">Öğrenciler</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Üniversite öğrencileri (part-time)</li>
+                                    <li>• Meslek lisesi öğrencileri</li>
+                                    <li>• Kursiyerler (İŞKUR vb.)</li>
+                                    <li>• Staj yapan öğrenciler</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Sigorta Kapsamı</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Kapsam Dahili</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• İş Kazası Sigortası</li>
+                                    <li>• Meslek Hastalığı Sigortası</li>
+                                    <li>• Genel Sağlık Sigortası</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-red-700 mb-2">❌ Kapsam Dışı</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Malullük Sigortası</li>
+                                    <li>• Yaşlılık Sigortası</li>
+                                    <li>• Ölüm Sigortası</li>
+                                    <li>• Hastalık Sigortası</li>
+                                    <li>• İşsizlik Sigortası</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-yellow-700 mb-2">💰 Prim Ödeme</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• <strong>Prim Oranı:</strong> %6 (İş kazası %1 + GSS %5)</li>
+                                <li>• <strong>Ödeyici:</strong> İşveren/Kurum</li>
+                                <li>• <strong>Matrah:</strong> Günlük asgari ücret</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Önemli:</strong> Bu süreler emekliliğe sayılmaz, sadece eğitim/staj süresince koruma sağlar. Asıl amaç iş kazası riskine karşı güvencedir.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>👨‍💼 Proje Personeli ve Geçici İşçiler</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Tanımı ve Kapsamı</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>Proje Personeli:</strong> Belirli bir proje için sınırlı süreyle çalışanlar</li>
+                            <li><strong>Mevsimlik İşçiler:</strong> Tarım, turizm sektöründe geçici çalışanlar</li>
+                            <li><strong>Günlük İşçiler:</strong> Günlük/haftalık çalışma yapanlar</li>
+                            <li><strong>Kampanya İşçileri:</strong> Belirli dönemler için çalışanlar</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Sigortalılık Durumu</h4>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm mb-2"><strong>Genel Kural:</strong> 30 günden az çalışanlar için özel düzenlemeler vardır.</p>
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li>30 günden az: Sadece iş kazası sigortası</li>
+                                <li>30 gün ve üzeri: Tam sigortalılık (4/a)</li>
+                                <li>Aralıklı çalışma: Gün toplamı esas alınır</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Kritik Nokta:</strong> Çalışma süresi 30 günü geçerse otomatik olarak tam sigortalılığa (4/a) geçiş yapar.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🏠 Ev Hizmetlerinde Çalışanlar</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Ev Hizmetlerinin Tanımı</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Ev temizliği, yemek yapma, çocuk bakımı</li>
+                            <li>Yaşlı bakımı, hasta bakımı</li>
+                            <li>Bahçıvanlık, kapıcılık (ev için)</li>
+                            <li>Özel konut ve müştemilatında çalışma</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Sigortalılık Koşulları</h4>
+                        <div class="overflow-x-auto mb-4">
+                            <table class="w-full border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border">Çalışma Süresi</th>
+                                        <th class="p-3 font-semibold border">Sigortalılık Durumu</th>
+                                        <th class="p-3 font-semibold border">Kapsam</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 border">Ayda 10 günden az</td>
+                                        <td class="p-3 border">Sigortalı değil</td>
+                                        <td class="p-3 border">İsteğe bağlı iş kazası sigortası</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border">Ayda 10-30 gün</td>
+                                        <td class="p-3 border">Kısmi sigortalı</td>
+                                        <td class="p-3 border">İş kazası + GSS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border">Ayda 30+ gün</td>
+                                        <td class="p-3 border">Tam sigortalı</td>
+                                        <td class="p-3 border">Tüm sigorta kolları</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-bold text-orange-700 mb-2">⚠️ Dikkat Edilecek Hususlar</h5>
+                            <ul class="text-sm space-y-1">
+                                <li>• Birden fazla evde çalışma durumunda günler toplanır</li>
+                                <li>• İşveren bildirim yapmakla yükümlüdür</li>
+                                <li>• Prim ödemesinde işveren sorumludur</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-point"><strong>Özel Durum:</strong> Ev hizmetlerinde çalışanlar için özel prim oranları ve kolaylıklar vardır.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow">
+                    <button class="accordion-header w-full text-left p-5 font-semibold text-lg flex justify-between items-center"><span>🌍 Yabancı Uyruklu Sigortalılar</span><span class="transform transition-transform duration-300">▼</span></button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <h4 class="font-bold text-blue-600 mb-3">Sigortalılık Koşulları</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>Çalışma İzni:</strong> Geçerli çalışma izni bulunmalı</li>
+                            <li><strong>İkamet İzni:</strong> Türkiye'de legal ikamet</li>
+                            <li><strong>Sosyal Güvenlik Anlaşması:</strong> Ülkeler arası anlaşmalar</li>
+                            <li><strong>Süreli/Süresiz:</strong> İzin türüne göre farklılık</li>
+                        </ul>
+                        
+                        <h4 class="font-bold text-blue-600 mb-3">Özel Durumlar</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-green-700 mb-2">✅ Tam Kapsam</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Süresiz çalışma izni olanlar</li>
+                                    <li>• 1 yıldan uzun süreli izin</li>
+                                    <li>• Anlaşmalı ülke vatandaşları</li>
+                                    <li>• Mülteci statüsündekiler</li>
+                                </ul>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-yellow-700 mb-2">⚠️ Sınırlı Kapsam</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Kısa süreli çalışma izni</li>
+                                    <li>• Geçici koruma altındakiler</li>
+                                    <li>• Belirli projeler için gelenler</li>
+                                    <li>• Turist vizesiyle çalışanlar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="key-point"><strong>Sosyal Güvenlik Anlaşmaları:</strong> Türkiye'nin sosyal güvenlik anlaşması olan ülke vatandaşları için özel düzenlemeler ve hak transferleri vardır.</div>
+                    </div>
+                </div>
             </div>`
     }
 };
