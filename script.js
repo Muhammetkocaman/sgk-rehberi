@@ -2045,7 +2045,7 @@ function initializeSectionProgress() {
     });
 }
 
-// Mobil Menü Sistemi
+// Mobil Menü Sistemi - İyileştirilmiş
 function initializeMobileMenu() {
     const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
     const sidebar = document.getElementById('sidebar');
@@ -2054,37 +2054,78 @@ function initializeMobileMenu() {
     
     if (!mobileMenuBtn || !sidebar || !overlay) return;
     
+    let isMenuOpen = false;
+    
     // Menü toggle fonksiyonu
     function toggleMobileMenu() {
-        sidebar.classList.toggle('mobile-open');
-        overlay.classList.toggle('active');
+        isMenuOpen = !isMenuOpen;
         
-        // Icon değiştirme
+        if (isMenuOpen) {
+            sidebar.classList.add('mobile-open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Scroll'u engelle
+        } else {
+            sidebar.classList.remove('mobile-open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; // Scroll'u serbest bırak
+        }
+        
+        // Icon değiştirme - daha yumuşak
         const icon = mobileMenuBtn.querySelector('svg path');
-        if (sidebar.classList.contains('mobile-open')) {
+        if (isMenuOpen) {
             icon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // X icon
+            mobileMenuBtn.setAttribute('aria-label', 'Menüyü Kapat');
         } else {
             icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger icon
+            mobileMenuBtn.setAttribute('aria-label', 'Menüyü Aç');
         }
     }
     
     // Menüyü kapatma fonksiyonu
     function closeMobileMenu() {
+        if (!isMenuOpen) return;
+        
+        isMenuOpen = false;
         sidebar.classList.remove('mobile-open');
         overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        
         const icon = mobileMenuBtn.querySelector('svg path');
         icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        mobileMenuBtn.setAttribute('aria-label', 'Menüyü Aç');
     }
     
+    // Touch events için destek
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    // Touch başlangıcı
+    sidebar.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    // Touch sonu - swipe left ile kapatma
+    sidebar.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) { // 50px'den fazla sola swipe
+            closeMobileMenu();
+        }
+    }, { passive: true });
+    
     // Event listeners
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleMobileMenu();
+    });
+    
     overlay.addEventListener('click', closeMobileMenu);
     
-    // Sidebar link'lerine tıklandığında menüyü kapat
+    // Sidebar link'lerine tıklandığında menüyü kapat (mobilde)
     sidebarLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
-                closeMobileMenu();
+                // Küçük bir gecikme ile menüyü kapat (animasyon için)
+                setTimeout(closeMobileMenu, 150);
             }
         });
     });
@@ -2098,8 +2139,19 @@ function initializeMobileMenu() {
     
     // ESC tuşu ile kapatma
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar.classList.contains('mobile-open')) {
+        if (e.key === 'Escape' && isMenuOpen) {
             closeMobileMenu();
         }
     });
+    
+    // Sayfa yüklendiğinde accessibility attributes'ları ayarla
+    mobileMenuBtn.setAttribute('aria-label', 'Menüyü Aç');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    
+    // Menü durumu değiştiğinde aria-expanded'ı güncelle
+    const observer = new MutationObserver(() => {
+        mobileMenuBtn.setAttribute('aria-expanded', isMenuOpen.toString());
+    });
+    
+    observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
 }
