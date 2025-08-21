@@ -1211,6 +1211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeScrollProgress();
     initializeMobileOptimizations();
     initializeEducationalFeatures();
+    initializeMobileMenu();
 });
 
 // İçeriği başlat
@@ -1576,5 +1577,64 @@ function initializeSectionProgress() {
     
     document.querySelectorAll('.content-section').forEach(section => {
         observer.observe(section);
+    });
+}
+
+// Mobil Menü Sistemi
+function initializeMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('mobile-overlay');
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+    
+    if (!mobileMenuBtn || !sidebar || !overlay) return;
+    
+    // Menü toggle fonksiyonu
+    function toggleMobileMenu() {
+        sidebar.classList.toggle('mobile-open');
+        overlay.classList.toggle('active');
+        
+        // Icon değiştirme
+        const icon = mobileMenuBtn.querySelector('svg path');
+        if (sidebar.classList.contains('mobile-open')) {
+            icon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // X icon
+        } else {
+            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger icon
+        }
+    }
+    
+    // Menüyü kapatma fonksiyonu
+    function closeMobileMenu() {
+        sidebar.classList.remove('mobile-open');
+        overlay.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('svg path');
+        icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+    }
+    
+    // Event listeners
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    overlay.addEventListener('click', closeMobileMenu);
+    
+    // Sidebar link'lerine tıklandığında menüyü kapat
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                closeMobileMenu();
+            }
+        });
+    });
+    
+    // Window resize'da kontrol
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMobileMenu();
+        }
+    });
+    
+    // ESC tuşu ile kapatma
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('mobile-open')) {
+            closeMobileMenu();
+        }
     });
 }

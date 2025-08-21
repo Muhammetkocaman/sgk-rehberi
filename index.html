@@ -13,9 +13,19 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- Mobil Menü Butonu -->
+    <button class="mobile-menu-btn md:hidden" id="mobile-menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+    
+    <!-- Mobil Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
     <div class="flex flex-col md:flex-row min-h-screen">
         <!-- Sidebar -->
-        <aside class="w-full md:w-72 bg-white/95 backdrop-blur-md shadow-xl md:fixed md:h-full overflow-y-auto border-r border-gray-200">
+        <aside class="w-full md:w-72 bg-white shadow-lg md:fixed md:h-full overflow-y-auto border-r border-gray-200" id="sidebar">
             <div class="p-6 border-b border-gray-100">
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-teal-600 rounded-lg flex items-center justify-center">

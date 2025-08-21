@@ -2,36 +2,36 @@
 /* Modern ve Eğitimsel Tasarım - 2024 */
 
 :root {
-    /* Ana Renk Paleti - Eğitim Odaklı */
-    --primary-blue: #1e40af;
-    --primary-teal: #0d9488;
-    --accent-purple: #7c3aed;
-    --accent-amber: #f59e0b;
-    --success-green: #059669;
-    --warning-orange: #ea580c;
+    /* Mobil Dostu - Sade Renk Paleti */
+    --primary-blue: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #dbeafe;
+    --success-green: #10b981;
+    --warning-amber: #f59e0b;
+    --danger-red: #ef4444;
     
-    /* Nötr Renkler */
-    --gray-50: #f8fafc;
-    --gray-100: #f1f5f9;
-    --gray-200: #e2e8f0;
-    --gray-300: #cbd5e1;
-    --gray-400: #94a3b8;
-    --gray-500: #64748b;
-    --gray-600: #475569;
-    --gray-700: #334155;
-    --gray-800: #1e293b;
-    --gray-900: #0f172a;
+    /* Nötr Renkler - Mobil Optimized */
+    --white: #ffffff;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-teal) 100%);
-    --gradient-purple: linear-gradient(135deg, var(--accent-purple) 0%, var(--primary-blue) 100%);
-    --gradient-warm: linear-gradient(135deg, var(--accent-amber) 0%, var(--warning-orange) 100%);
+    /* Sade Arka Planlar */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --bg-accent: #eff6ff;
     
-    /* Shadows */
+    /* Basit Gölgeler */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     
     /* Border Radius */
     --radius-sm: 0.375rem;
@@ -42,71 +42,63 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: var(--bg-secondary);
     color: var(--gray-800);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sidebar Stilleri - Modern Eğitimsel Tasarım */
+/* Mobil menü butonunu desktop'ta gizle */
+.mobile-menu-btn {
+    display: none;
+}
+
+/* Mobil Dostu Sidebar - Sade Tasarım */
 .sidebar-link {
     position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: var(--radius-lg);
-    margin: 0.25rem 0.75rem;
+    transition: all 0.2s ease;
+    border-radius: var(--radius-md);
+    margin: 0.125rem 0.5rem;
+    border: 1px solid transparent;
 }
 
 .sidebar-link:hover {
-    background: var(--gradient-primary);
-    color: white;
-    transform: translateX(4px);
-    box-shadow: var(--shadow-md);
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-blue);
 }
 
 .sidebar-link.active {
-    background: var(--gradient-primary);
+    background: var(--primary-blue);
     color: white;
     font-weight: 600;
-    box-shadow: var(--shadow-lg);
-    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
 }
 
 .sidebar-link.active::before {
     content: '';
     position: absolute;
-    left: -0.75rem;
+    left: -0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 4px;
-    height: 60%;
-    background: var(--accent-amber);
+    width: 3px;
+    height: 50%;
+    background: var(--warning-amber);
     border-radius: 2px;
 }
 
 .sidebar-header {
-    padding: 1rem 1.5rem;
-    font-size: 0.75rem;
-    font-weight: 800;
-    color: var(--primary-blue);
+    padding: 0.75rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--gray-600);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
-    border-left: 4px solid var(--primary-teal);
-    margin: 0.5rem 0.75rem;
-    border-radius: var(--radius-md);
-    position: relative;
-    overflow: hidden;
-}
-
-.sidebar-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--gradient-primary);
+    letter-spacing: 0.05em;
+    background: var(--gray-100);
+    border-left: 3px solid var(--primary-blue);
+    margin: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
 }
 
 /* İçerik Bölümleri - Eğitimsel Layout */
@@ -130,14 +122,11 @@ body {
     }
 }
 
-/* Ana İçerik Kartları */
+/* Mobil Dostu İçerik Başlıkları */
 .content-section h1 {
-    background: var(--gradient-primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-blue);
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .content-section h1::after {
@@ -145,25 +134,23 @@ body {
     position: absolute;
     bottom: -0.5rem;
     left: 0;
-    width: 4rem;
-    height: 3px;
-    background: var(--gradient-warm);
-    border-radius: 2px;
+    width: 3rem;
+    height: 2px;
+    background: var(--primary-blue);
+    border-radius: 1px;
 }
 
-/* Kart Tasarımları */
+/* Sade Kart Tasarımları */
 .bg-white {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: var(--shadow-lg);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--bg-primary);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
 }
 
 .bg-white:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
-    border-color: var(--primary-teal);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-blue);
 }
 
 .rounded-xl {
@@ -184,54 +171,36 @@ body {
     height: 320px;
 }
 
-/* Navigasyon Butonları - Modern Eğitimsel Tasarım */
+/* Sade Navigasyon Butonları */
 .nav-button {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: var(--radius-lg);
+    transition: all 0.2s ease;
+    border-radius: var(--radius-md);
     font-weight: 500;
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-primary);
-    transition: left 0.3s ease;
-    z-index: -1;
-}
-
-.nav-button:hover::before {
-    left: 0;
+    border: 1px solid var(--gray-300);
+    background: var(--bg-primary);
+    color: var(--gray-700);
 }
 
 .nav-button:hover {
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-blue);
 }
 
 .nav-button.active {
-    background: var(--gradient-primary);
+    background: var(--primary-blue);
     color: white;
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-md);
 }
 
-.nav-button.active::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 3px;
-    background: var(--accent-amber);
-    border-radius: 2px;
+/* Mobil Navigasyon Butonları */
+@media (max-width: 768px) {
+    .nav-button {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+        margin: 0.125rem;
+    }
 }
 
 /* Accordion Stilleri */
@@ -298,65 +267,128 @@ body {
     }
 }
 
-/* Mobil Tasarım - Ders Notu Optimizasyonu */
+/* Mobil Menü Sistemi */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Daha iyi okuma deneyimi */
+        font-size: 15px;
     }
     
-    .chart-container {
-        max-width: 100%;
-        height: 250px;
-        margin: 1rem 0;
+    /* Mobil Sidebar Toggle */
+    .mobile-menu-btn {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1000;
+        background: var(--primary-blue);
+        color: white;
+        border: none;
+        border-radius: var(--radius-md);
+        padding: 0.75rem;
+        box-shadow: var(--shadow-lg);
+        cursor: pointer;
     }
     
-    .sidebar-header {
-        padding: 0.75rem 1rem;
-        font-size: 0.7rem;
-        margin: 0.25rem 0.5rem;
+    /* Mobil Sidebar */
+    aside {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
     }
     
-    .sidebar-link {
-        padding: 1rem 1rem;
-        margin: 0.125rem 0.5rem;
-        font-size: 0.9rem;
+    aside.mobile-open {
+        transform: translateX(0);
     }
     
+    /* Mobil Overlay */
+    .mobile-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+    /* Main content mobile adjustment */
+    main {
+        margin-left: 0;
+        padding-top: 4rem; /* Space for mobile menu button */
+    }
+    
+    /* Sade Kart Menüleri */
     .content-section {
-        padding: 1rem;
+        padding: 0.75rem;
     }
     
     .content-section h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.3;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
     
-    .key-point {
-        padding: 1.25rem;
-        margin: 1rem 0;
-        font-size: 0.95rem;
+    /* Mobil Accordion Menü Kartları */
+    .accordion-container .bg-white {
+        margin-bottom: 0.75rem;
+        border-radius: var(--radius-md);
+        overflow: hidden;
     }
     
-    /* Mobilde kartlar için özel stil */
-    .bg-white {
-        margin-bottom: 1.5rem;
-        padding: 1.25rem;
+    .accordion-header {
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--gray-200);
+        padding: 1rem;
+        font-size: 0.9rem;
     }
     
-    /* Mobil tablo responsive */
+    .accordion-content {
+        padding: 1rem;
+        background: var(--bg-primary);
+    }
+    
+    /* Mobil Tablolar */
     .overflow-x-auto {
-        box-shadow: inset 0 0 0 1px var(--gray-200);
-        border-radius: var(--radius-lg);
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-md);
+        margin: 1rem 0;
     }
     
     table {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     
     table th,
     table td {
-        padding: 0.75rem 0.5rem;
+        padding: 0.5rem 0.25rem;
+    }
+    
+    /* Key Point Kutularını Mobilde Sadeleştir */
+    .key-point {
+        background: var(--bg-accent);
+        border-left: 3px solid var(--primary-blue);
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: var(--radius-md);
+        font-size: 0.9rem;
+    }
+    
+    .key-point::before {
+        content: '💡';
+        float: right;
+        opacity: 0.6;
+    }
+    
+    /* Grafik Container */
+    .chart-container {
+        max-width: 100%;
+        height: 200px;
+        margin: 1rem 0;
     }
 }
 
