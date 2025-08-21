@@ -1,0 +1,542 @@
+/* Sosyal Güvenlik Hukuku Rehberi - Ana Stilleri */
+/* Modern ve Eğitimsel Tasarım - 2024 */
+
+:root {
+    /* Ana Renk Paleti - Eğitim Odaklı */
+    --primary-blue: #1e40af;
+    --primary-teal: #0d9488;
+    --accent-purple: #7c3aed;
+    --accent-amber: #f59e0b;
+    --success-green: #059669;
+    --warning-orange: #ea580c;
+    
+    /* Nötr Renkler */
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-300: #cbd5e1;
+    --gray-400: #94a3b8;
+    --gray-500: #64748b;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --gray-900: #0f172a;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-teal) 100%);
+    --gradient-purple: linear-gradient(135deg, var(--accent-purple) 0%, var(--primary-blue) 100%);
+    --gradient-warm: linear-gradient(135deg, var(--accent-amber) 0%, var(--warning-orange) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: var(--gray-800);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sidebar Stilleri - Modern Eğitimsel Tasarım */
+.sidebar-link {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: var(--radius-lg);
+    margin: 0.25rem 0.75rem;
+}
+
+.sidebar-link:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar-link.active {
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(4px);
+}
+
+.sidebar-link.active::before {
+    content: '';
+    position: absolute;
+    left: -0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: var(--accent-amber);
+    border-radius: 2px;
+}
+
+.sidebar-header {
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
+    border-left: 4px solid var(--primary-teal);
+    margin: 0.5rem 0.75rem;
+    border-radius: var(--radius-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+}
+
+/* İçerik Bölümleri - Eğitimsel Layout */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+    animation: slideInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideInUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px) scale(0.95);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Ana İçerik Kartları */
+.content-section h1 {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.content-section h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 4rem;
+    height: 3px;
+    background: var(--gradient-warm);
+    border-radius: 2px;
+}
+
+/* Kart Tasarımları */
+.bg-white {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-white:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-teal);
+}
+
+.rounded-xl {
+    border-radius: var(--radius-xl);
+}
+
+.shadow {
+    box-shadow: var(--shadow-md);
+}
+
+/* Grafik Konteyneri */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 320px;
+}
+
+/* Navigasyon Butonları - Modern Eğitimsel Tasarım */
+.nav-button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: var(--radius-lg);
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.nav-button:hover::before {
+    left: 0;
+}
+
+.nav-button:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nav-button.active {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.nav-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: var(--accent-amber);
+    border-radius: 2px;
+}
+
+/* Accordion Stilleri */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Önemli Bilgi Kutuları - Eğitimsel Vurgu */
+.key-point {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border: none;
+    border-left: 5px solid var(--primary-blue);
+    color: var(--gray-800);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin: 1.5rem 0;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.key-point::before {
+    content: '💡';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.key-point:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+}
+
+.key-point strong {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* PEK Toggle Butonları */
+.pek-toggle-btn {
+    transition: all 0.3s ease;
+}
+
+.pek-toggle-btn.active {
+    border-bottom-color: #0d9488;
+    color: #0d9488;
+}
+
+/* Mobil Deneyimi - Eğitimsel Odaklı Responsive Tasarım */
+
+/* Tablet Tasarım */
+@media (max-width: 1024px) {
+    .content-section h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar-header {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+/* Mobil Tasarım - Ders Notu Optimizasyonu */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Daha iyi okuma deneyimi */
+    }
+    
+    .chart-container {
+        max-width: 100%;
+        height: 250px;
+        margin: 1rem 0;
+    }
+    
+    .sidebar-header {
+        padding: 0.75rem 1rem;
+        font-size: 0.7rem;
+        margin: 0.25rem 0.5rem;
+    }
+    
+    .sidebar-link {
+        padding: 1rem 1rem;
+        margin: 0.125rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .content-section {
+        padding: 1rem;
+    }
+    
+    .content-section h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+    
+    .key-point {
+        padding: 1.25rem;
+        margin: 1rem 0;
+        font-size: 0.95rem;
+    }
+    
+    /* Mobilde kartlar için özel stil */
+    .bg-white {
+        margin-bottom: 1.5rem;
+        padding: 1.25rem;
+    }
+    
+    /* Mobil tablo responsive */
+    .overflow-x-auto {
+        box-shadow: inset 0 0 0 1px var(--gray-200);
+        border-radius: var(--radius-lg);
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table th,
+    table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* Küçük Mobil Cihazlar */
+@media (max-width: 480px) {
+    .content-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sidebar-link {
+        padding: 0.875rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .key-point {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .bg-white {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    table th,
+    table td {
+        padding: 0.5rem 0.375rem;
+    }
+}
+
+/* Dokunmatik Cihazlar için İyileştirmeler */
+@media (hover: none) and (pointer: coarse) {
+    .sidebar-link:hover {
+        transform: none;
+    }
+    
+    .bg-white:hover {
+        transform: none;
+    }
+    
+    .key-point:hover {
+        transform: none;
+    }
+    
+    /* Dokunma alanlarını büyüt */
+    .sidebar-link {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-button {
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Tablo Stilleri */
+table {
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #e2e8f0;
+}
+
+table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+/* Hover Efektleri */
+.sidebar-link:hover {
+    background-color: #f0fdfa;
+    transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #f1f5f9;
+    transition: all 0.2s ease;
+}
+
+/* Accordion İkon Animasyonu */
+.accordion-header span:last-child {
+    transition: transform 0.3s ease;
+}
+
+/* Accordion Açık Durumu */
+.accordion-content.open {
+    max-height: none;
+}
+
+/* Eğitimsel Özellikler */
+.completed {
+    background: linear-gradient(135deg, var(--success-green), #10b981) !important;
+    color: white !important;
+}
+
+.completed:hover {
+    background: linear-gradient(135deg, #10b981, var(--success-green)) !important;
+}
+
+mark {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    color: #92400e;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Focus States for Accessibility */
+.sidebar-link:focus,
+.nav-button:focus,
+.accordion-header:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-blue);
+}
+
+/* Print Stilleri */
+@media print {
+    .sidebar {
+        display: none;
+    }
+    
+    .content-section {
+        display: block !important;
+    }
+    
+    .chart-container {
+        display: none;
+    }
+    
+    #scroll-progress {
+        display: none;
+    }
+    
+    .bg-white {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    
+    .key-point {
+        border: 2px solid #000;
+        background: #f0f0f0 !important;
+    }
+}

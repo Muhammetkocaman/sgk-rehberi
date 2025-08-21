@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnteraktif Sosyal Güvenlik Hukuku Rehberi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-72 bg-white/95 backdrop-blur-md shadow-xl md:fixed md:h-full overflow-y-auto border-r border-gray-200">
+            <div class="p-6 border-b border-gray-100">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-teal-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">📚</span>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">SGK Rehberi</h2>
+                        <p class="text-xs text-slate-500 font-medium">İnteraktif Ders Notları</p>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-gradient-to-r from-blue-50 to-teal-50 rounded-lg border border-blue-100">
+                    <p class="text-xs text-blue-700 font-medium">📖 5510 Sayılı Kanun Rehberi</p>
+                </div>
+            </div>
+            <nav>
+                <div class="sidebar-header">Genel Esaslar</div>
+                <a href="#giris" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🏠</span> Giriş
+                </a>
+                <a href="#temel-kavramlar" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🔑</span> Sigortalılık İlişkisi
+                </a>
+                <a href="#istisnalar" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🚫</span> Kapsam ve İstisnalar
+                </a>
+
+                <div class="sidebar-header">Finansman</div>
+                 <a href="#pek" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">💰</span> Prime Esas Kazanç
+                </a>
+                <a href="#prim-oranlari" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">📊</span> Prim Oranları Paneli
+                </a>
+                 <a href="#finansman-surecleri" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">📋</span> Ödeme ve Yaptırımlar
+                </a>
+
+                <div class="sidebar-header">Sigorta Kolları</div>
+                <a href="#kisa-vadeli" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🩹</span> Kısa Vadeli Sigorta
+                </a>
+                 <a href="#uzun-vadeli" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">⏳</span> Uzun Vadeli Sigorta
+                </a>
+                <a href="#gss" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🏥</span> Genel Sağlık Sigortası
+                </a>
+                
+                <div class="sidebar-header">Diğer Konular</div>
+                 <a href="#ortak-hukumler" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">🔗</span> Ortak Hükümler
+                </a>
+                 <a href="#kanunlar" class="sidebar-link flex items-center px-6 py-3 text-slate-700 hover:bg-teal-50 transition-colors duration-200">
+                    <span class="mr-3 text-lg">⚖️</span> Temel Kanunlar
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 md:ml-72 p-4 md:p-8 lg:p-10">
+            
+            <!-- Progress Bar (Scroll Indicator) -->
+            <div class="fixed top-0 left-0 md:left-72 right-0 h-1 bg-gray-200 z-50">
+                <div id="scroll-progress" class="h-full bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 ease-out" style="width: 0%"></div>
+            </div>
+            
+            <!-- SECTIONS WILL BE DYNAMICALLY INSERTED HERE -->
+             <section id="giris" class="content-section"></section>
+             <section id="temel-kavramlar" class="content-section"></section>
+             <section id="istisnalar" class="content-section"></section>
+             <section id="pek" class="content-section"></section>
+             <section id="prim-oranlari" class="content-section"></section>
+             <section id="finansman-surecleri" class="content-section"></section>
+             <section id="kisa-vadeli" class="content-section"></section>
+             <section id="uzun-vadeli" class="content-section"></section>
+             <section id="gss" class="content-section"></section>
+             <section id="ortak-hukumler" class="content-section"></section>
+             <section id="kanunlar" class="content-section"></section>
+
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

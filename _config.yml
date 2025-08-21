@@ -1,0 +1,73 @@
+# GitHub Pages Configuration
+# SGK Rehberi - Sosyal Güvenlik Hukuku Rehberi
+
+# Site ayarları
+title: "SGK Rehberi - Sosyal Güvenlik Hukuku"
+description: "İnteraktif Sosyal Güvenlik Hukuku Rehberi - Türkiye sosyal güvenlik sistemini öğrenin"
+author: "SGK Rehberi Ekibi"
+email: your-email@example.com
+
+# URL ayarları
+url: "https://username.github.io"  # GitHub Pages URL'inizi buraya yazın
+baseurl: "/sgk-rehberi"           # Repository adınızı buraya yazın
+
+# Build ayarları
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugin'ler
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO ve Meta
+lang: tr
+timezone: Europe/Istanbul
+
+# Social media
+social:
+  name: SGK Rehberi
+  links:
+    - https://github.com/username/sgk-rehberi
+
+# GitHub Pages ayarları
+github:
+  repository_name: sgk-rehberi
+  owner_name: username
+
+# Exclude files
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - package.json
+  - server.py
+  - start.sh
+  - start.bat
+  - node_modules
+  - .git
+  - .gitignore
+
+# Include files
+include:
+  - _pages
+
+# Collections (eğer ileride eklemek isterseniz)
+collections:
+  notes:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"

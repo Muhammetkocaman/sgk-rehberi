@@ -1,0 +1,67 @@
+# Netlify Configuration
+# SGK Rehberi deployment ayarları
+
+[build]
+  # Build komutu (statik site olduğu için gerekmiyor)
+  command = "echo 'Static site - no build required'"
+  
+  # Publish edilecek dizin
+  publish = "."
+  
+  # Node.js versiyonu
+  environment = { NODE_VERSION = "18" }
+
+# Redirect kuralları
+[[redirects]]
+  # Ana sayfa
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  # SPA routing için
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Header'lar
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Güvenlik header'ları
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Cache kontrolü
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Form handling (ileride ihtiyaç olursa)
+# [[forms]]
+#   name = "contact"
+
+# Fonksiyonlar (ileride API ihtiyacı olursa)
+# [functions]
+#   directory = "functions"
+
+# Dev server ayarları
+[dev]
+  command = "python3 -m http.server 8888"
+  port = 8888
+  publish = "."

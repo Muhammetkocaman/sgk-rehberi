@@ -1,0 +1,32 @@
+{
+  "name": "sgk-rehberi",
+  "version": "1.0.0",
+  "description": "İnteraktif Sosyal Güvenlik Hukuku Rehberi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "start-node": "npx serve . -p 8080",
+    "start-php": "php -S localhost:8080",
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "echo 'Ready for deployment to GitHub Pages or any static hosting'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/sgk-rehberi.git"
+  },
+  "keywords": [
+    "sosyal-güvenlik",
+    "sgk",
+    "eğitim",
+    "hukuk",
+    "rehber",
+    "türkiye"
+  ],
+  "author": "SGK Rehberi",
+  "license": "MIT",
+  "homepage": "https://username.github.io/sgk-rehberi",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
