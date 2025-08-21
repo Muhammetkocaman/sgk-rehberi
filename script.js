@@ -2056,18 +2056,29 @@ function initializeMobileMenu() {
     
     let isMenuOpen = false;
     
+    // Scroll pozisyonunu saklamak için
+    let scrollPosition = 0;
+    
     // Menü toggle fonksiyonu
     function toggleMobileMenu() {
         isMenuOpen = !isMenuOpen;
         
         if (isMenuOpen) {
+            // Scroll pozisyonunu sakla
+            scrollPosition = window.pageYOffset;
+            
             sidebar.classList.add('mobile-open');
             overlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Scroll'u engelle
+            document.body.classList.add('menu-open');
+            document.body.style.top = `-${scrollPosition}px`;
         } else {
             sidebar.classList.remove('mobile-open');
             overlay.classList.remove('active');
-            document.body.style.overflow = ''; // Scroll'u serbest bırak
+            document.body.classList.remove('menu-open');
+            document.body.style.top = '';
+            
+            // Scroll pozisyonunu geri yükle
+            window.scrollTo(0, scrollPosition);
         }
         
         // Icon değiştirme - daha yumuşak
@@ -2088,7 +2099,11 @@ function initializeMobileMenu() {
         isMenuOpen = false;
         sidebar.classList.remove('mobile-open');
         overlay.classList.remove('active');
-        document.body.style.overflow = '';
+        document.body.classList.remove('menu-open');
+        document.body.style.top = '';
+        
+        // Scroll pozisyonunu geri yükle
+        window.scrollTo(0, scrollPosition);
         
         const icon = mobileMenuBtn.querySelector('svg path');
         icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
@@ -2122,10 +2137,26 @@ function initializeMobileMenu() {
     
     // Sidebar link'lerine tıklandığında menüyü kapat (mobilde)
     sidebarLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                // Küçük bir gecikme ile menüyü kapat (animasyon için)
-                setTimeout(closeMobileMenu, 150);
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && isMenuOpen) {
+                e.preventDefault(); // Varsayılan davranışı engelle
+                
+                // Link hedefini al
+                const target = link.getAttribute('href');
+                
+                // Menüyü kapat
+                closeMobileMenu();
+                
+                // Küçük bir gecikme sonrası navigate et
+                setTimeout(() => {
+                    if (target && target.startsWith('#')) {
+                        // Hash'i değiştir, navigation sistemi otomatik olarak çalışacak
+                        window.location.hash = target;
+                        
+                        // Scroll pozisyonunu sıfırla
+                        window.scrollTo(0, 0);
+                    }
+                }, 300); // Menü kapanma animasyonu bitene kadar bekle
             }
         });
     });
